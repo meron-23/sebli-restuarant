@@ -51,9 +51,21 @@
 <nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
 <a class="hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="relative group">
+  <button class="hover:text-primary transition-colors flex items-center gap-1">
+    Services
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <div class="absolute top-full left-0 mt-2 w-48 bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="restaurant.html">Restaurant</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="hookah-lounge.html">Hookah Lounge</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="event-center.html">Event Center</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="catering.html">Catering</a>
+  </div>
+</div>
 <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 <button class="md:hidden" onclick="toggleMobileMenu()">
@@ -67,9 +79,14 @@
 <nav class="container mx-auto px-4 py-4 space-y-2">
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-2 mt-2">
+  <p class="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mb-2">Services</p>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="restaurant.html">Restaurant</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="hookah-lounge.html">Hookah Lounge</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="event-center.html">Event Center</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="catering.html">Catering</a>
+</div>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 </div>
@@ -120,28 +137,28 @@
 </h4>
 <div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
 <div class="aspect-square rounded-lg overflow-hidden relative group">
-<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAapHGm8mSeOkTeNw9bvIjWx_NZXFvDNNrS3mT95DkwGQzFKEMRhGx4nN_vTc7tThDgAtheA9_0aGF6R7YjFISIjJxhn9-LwsodQxFdHAzNm6o5Q-0cIyQCUpvQmUxZUcuhSNkx8BJMq_oIViW-XcAjgDF0kpHfHR5QbDmopw4zwgqvt04p-r1f_lbgBDzCm5u0_F2xQf3IrnxfNx67wU0k-nY4SD8l2HFY9cvP_A_cpmWViCtIFA95OLm4c3G9BKHasqEvaEFmSVQ"/>
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="480909799_1295360915083342_7316752577609916498_n.jpg">
 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="text-white text-center p-2">
-<p class="text-sm font-bold">Cocktail Night!</p>
+<p class="text-sm font-bold">Ethiopian Coffee Ceremony</p>
 <p class="text-xs mt-1">2.3k Likes</p>
 </div>
 </div>
 </div>
 <div class="aspect-square rounded-lg overflow-hidden relative group">
-<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwHuN8ov7-XDrPyuvRQW6QW8eJud3Ujd8NYiLT4g_glR3RxyiqkO3zVGQPBME5skrJ2eh9kYD6kNDrjIdYSoy-2uHX5IZ5iYR__3thVibx-2K27QDypmN10zeK5GpjfXkoN_vNNvRZZIDDa647yA-t9oet73qLAfHDqV_qeK0FZPT61efYqCWfND5HlQV5G0y-N6wPZ35fUJGUDR_WhBQ7Qaetn3bkEf4kaKfDSa6_x5QFoA_12rDaYuLghcmyG5p7LoERMQd72ks"/>
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="637635498_1558028855483212_8958945095827718864_n.jpg">
 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="text-white text-center p-2">
-<p class="text-sm font-bold">Live Music Friday</p>
+<p class="text-sm font-bold">Traditional Ethiopian Platter</p>
 <p class="text-xs mt-1">1.8k Likes</p>
 </div>
 </div>
 </div>
 <div class="aspect-square rounded-lg overflow-hidden relative group">
-<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC17dx7A_jtUPtBgRoLJ125AAjdkV-pEhNkKarL9gYTEMIM8IVIAE2YV9BVTEMCvSVaPviNUbixg027diutfkSWMCRpCNcu7PTLHoj9e4OmmKHfsVWjjkECFm5tfq0voAe7VzEhG7N5WBMnX3Rlp095g-Qc5_Cw8vh5cWylboBLsmQwb3H39fT5We9AbFUGVn5ktqJlrbVloYA8Yg7Mz8OvpY_q7zFznZ1sj2mV1HTw7v_3guimoRUQN4AmTPjdwturCHhvRRB-91I"/>
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="645631949_1569877517631679_4574481113545472280_n.jpg">
 <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 <div class="text-white text-center p-2">
-<p class="text-sm font-bold">New Menu Items</p>
+<p class="text-sm font-bold">Ethiopian Feast Night</p>
 <p class="text-xs mt-1">3.1k Likes</p>
 </div>
 </div>

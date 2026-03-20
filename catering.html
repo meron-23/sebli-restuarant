@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catering - Sebli Ethiopian Restaurant & Lounge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8C031C",
+              secondary: "#022859",
+              accent: "#F28F6B",
+              brown: "#593202",
+              "background-light": "#f3f4f6",
+              "background-dark": "#0D0D0D",
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', "serif"],
+              body: ['"Lato"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+    <div class="flex min-h-screen flex-col pt-20">
+        <header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background-light/80 dark:bg-background-dark/70 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+            <div class="container mx-auto flex justify-between items-center">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold tracking-wider">Sebli Ethiopian</h1>
+                </div>
+                <nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
+                    <a class="hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
+                    <div class="relative group">
+                        <button class="hover:text-primary transition-colors flex items-center gap-1">
+                            Services
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-48 bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+                            <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="restaurant.html">Restaurant</a>
+                            <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="hookah-lounge.html">Hookah Lounge</a>
+                            <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="event-center.html">Event Center</a>
+                            <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="catering.html">Catering</a>
+                        </div>
+                    </div>
+                    <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                    <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+                </nav>
+                <button class="md:hidden" onclick="toggleMobileMenu()">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="fixed inset-x-0 top-20 z-40 hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+            <nav class="container mx-auto px-4 py-4 space-y-2">
+                <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="menu.html">Menu</a>
+                <div class="border-t border-stone-200 dark:border-stone-800 pt-2 mt-2">
+                    <p class="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mb-2">Services</p>
+                    <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="restaurant.html">Restaurant</a>
+                    <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="hookah-lounge.html">Hookah Lounge</a>
+                    <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="event-center.html">Event Center</a>
+                    <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="catering.html">Catering</a>
+                </div>
+                <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+                <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="relative bg-cover bg-center" style="height: 60vh; background-image: url('catering-3.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-60"></div>
+            <div class="container mx-auto flex h-full items-center justify-center relative z-10">
+                <div class="text-center">
+                    <h1 class="text-5xl font-bold text-white mb-4">Catering Services</h1>
+                    <p class="text-xl text-white max-w-2xl mx-auto">Bring authentic Ethiopian cuisine to your special events and celebrations</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <div class="container mx-auto px-4 py-12 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <!-- Catering Info -->
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Catering Services</h2>
+                        <p class="text-gray-600 dark:text-gray-400 mb-6">
+                            Elevate your events with the authentic flavors of Ethiopia! Our catering service brings 
+                            the rich culinary heritage of Ethiopia directly to your venue. From intimate gatherings 
+                            to large celebrations, we provide complete catering solutions with traditional dishes 
+                            prepared with the same care and authenticity as our restaurant.
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Authentic Ethiopian Cuisine</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Traditional recipes and flavors</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Professional Service</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Experienced catering staff</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <svg class="h-6 w-6 text-primary mt-1" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                <div>
+                                    <h3 class="font-semibold text-gray-900 dark:text-white">Customizable Menus</h3>
+                                    <p class="text-gray-600 dark:text-gray-400">Tailored to your event needs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <div>
+                        <div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-xl p-8 shadow-sm">
+                            <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Book Catering Service</h2>
+                            <form action="#" method="POST" class="space-y-6">
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="first-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">First Name</label>
+                                        <input type="text" name="first-name" id="first-name" autocomplete="given-name" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                    </div>
+                                    <div>
+                                        <label for="last-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Last Name</label>
+                                        <input type="text" name="last-name" id="last-name" autocomplete="family-name" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="phone-number" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</label>
+                                    <input type="tel" name="phone-number" id="phone-number" autocomplete="tel" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+                                    <input type="email" name="email" id="email" autocomplete="email" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                </div>
+                                <div>
+                                    <label for="event-type" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Event Type</label>
+                                    <select name="event-type" id="event-type" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                        <option value="">Select event type</option>
+                                        <option value="wedding">Wedding</option>
+                                        <option value="birthday">Birthday Party</option>
+                                        <option value="corporate">Corporate Event</option>
+                                        <option value="family">Family Gathering</option>
+                                        <option value="graduation">Graduation</option>
+                                        <option value="anniversary">Anniversary</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                    <div>
+                                        <label for="guests" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Number of Guests</label>
+                                        <input type="number" name="guests" id="guests" min="10" max="500" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                    </div>
+                                    <div>
+                                        <label for="date" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Event Date</label>
+                                        <input type="date" name="date" id="date" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="venue-address" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Venue Address</label>
+                                    <input type="text" name="venue-address" id="venue-address" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                </div>
+                                <div>
+                                    <label for="catering-package" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Catering Package</label>
+                                    <select name="catering-package" id="catering-package" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                                        <option value="">Select package</option>
+                                        <option value="basic">Basic Package - $15/person</option>
+                                        <option value="standard">Standard Package - $25/person</option>
+                                        <option value="premium">Premium Package - $35/person</option>
+                                        <option value="custom">Custom Package</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="dietary-restrictions" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Dietary Restrictions</label>
+                                    <textarea name="dietary-restrictions" id="dietary-restrictions" rows="3" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"></textarea>
+                                </div>
+                                <div>
+                                    <label for="special-requests" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Special Requests & Event Details</label>
+                                    <textarea name="special-requests" id="special-requests" rows="4" class="mt-1 block w-full rounded-md border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-white bg-primary rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 dark:focus:ring-offset-background-dark transition-all">
+                                        Book Catering Service
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Catering Packages -->
+            
+
+                <!-- Catering Features -->
+                <div class="mt-16">
+                    <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Why Choose Our Catering?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Authentic Flavors</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Traditional Ethiopian recipes</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Professional Staff</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Experienced catering team</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="h-16 w-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">Flexible Options</h3>
+                            <p class="text-gray-600 dark:text-gray-400">Customizable menu packages</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-background-light dark:bg-background-dark border-t border-primary/20">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="md:col-span-1">
+                        <h3 class="text-lg font-bold text-stone-900 dark:text-white mb-4">Location</h3>
+                        <div class="text-base text-stone-400">
+                            <p class="font-semibold">Sebli Ethiopian Restaurant & Lounge</p>
+                            <p>4995 Memorial Dr</p>
+                            <p>Stone Mountain, GA 30083</p>
+                        </div>
+                    </div>
+                    <div class="md:col-span-1">
+                        <h3 class="text-lg font-bold text-stone-900 dark:text-white mb-4">Working Hours</h3>
+                        <div class="text-base text-stone-400">
+                            <p>Open Daily: <span class="font-semibold">10:00 AM – 3:00 AM</span></p>
+                            <p>Dine-in, Takeaway & Late Night lounge.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 border-t border-primary/20 pt-8 flex flex-col md:flex-row items-center justify-between">
+                    <p class="text-sm text-stone-600 dark:text-stone-400 md:order-1">© 2024 Sebli Ethiopian Restaurant & Lounge. All Rights Reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById("mobileMenu");
+            mobileMenu.classList.toggle("hidden");
+        }
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById("mobileMenu").classList.add("hidden");
+            });
+        });
+    </script>
+</body>
+</html>

@@ -48,9 +48,21 @@
 <nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
 <a class="hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="relative group">
+  <button class="hover:text-primary transition-colors flex items-center gap-1">
+    Services
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <div class="absolute top-full left-0 mt-2 w-48 bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="restaurant.html">Restaurant</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="hookah-lounge.html">Hookah Lounge</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="event-center.html">Event Center</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="catering.html">Catering</a>
+  </div>
+</div>
 <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 <button class="md:hidden" onclick="toggleMobileMenu()">
@@ -64,9 +76,14 @@
 <nav class="container mx-auto px-4 py-4 space-y-2">
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-2 mt-2">
+  <p class="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mb-2">Services</p>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="restaurant.html">Restaurant</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="hookah-lounge.html">Hookah Lounge</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="event-center.html">Event Center</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="catering.html">Catering</a>
+</div>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 </div>
@@ -85,6 +102,7 @@
   <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-stone-200 dark:bg-stone-700 hover:bg-primary hover:text-white" data-filter="restaurant">Restaurant</button>
   <!-- <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-stone-200 dark:bg-stone-700 hover:bg-primary hover:text-white" data-filter="bar">Bar</button> -->
   <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-stone-200 dark:bg-stone-700 hover:bg-primary hover:text-white" data-filter="foods">Foods</button>
+  <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-stone-200 dark:bg-stone-700 hover:bg-primary hover:text-white" data-filter="catering">Catering</button>
   <!-- <button class="filter-btn px-4 py-2 rounded-lg font-semibold bg-stone-200 dark:bg-stone-700 hover:bg-primary hover:text-white" data-filter="events">Events</button> -->
 </div>
 
@@ -95,28 +113,49 @@
 <img alt="Sebli Restaurant Interior" class="w-full h-80 md:h-96 lg:h-[28rem] object-cover transition-transform duration-500 group-hover:scale-105" src="album-1.jpg"/>
 </div>
 <div class="rounded-xl overflow-hidden group" data-category="foods">
-<img alt="Ethiopian Dish" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-3.jpg"/>
-</div>
-<div class="rounded-xl overflow-hidden group" data-category="bar">
-<img alt="Sebli Bar Area" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-3.jpg"/>
-</div>
-<div class="rounded-xl overflow-hidden group" data-category="bar">
-<img alt="Ethiopian Drinks" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-3 (1).jpg"/>
+<img alt="Awaze Tibs - Ethiopian Beef Dish" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-2.jpg"/>
 </div>
 <div class="rounded-xl overflow-hidden group" data-category="foods">
-<img alt="Traditional Ethiopian Food" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-4.jpg"/>
+<img alt="Gored Gored - Ethiopian Beef Special" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-3.jpg"/>
 </div>
-<div class="rounded-xl overflow-hidden group" data-category="events">
-<img alt="Sebli Events" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-5.jpg"/>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Zilezil Tibs - Spicy Beef Strips" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-6.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Lega Tibs - Tender Beef Dish" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-7.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Ye Beg Tibs - Ethiopian Lamb" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-8.jpg"/>
 </div>
 <div class="rounded-xl overflow-hidden group" data-category="restaurant">
 <img alt="Sebli Dining Area" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menus-1.jpg"/>
 </div>
 <div class="col-span-2 rounded-xl overflow-hidden group" data-category="foods">
-<img alt="Sebli Menu Presentation" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menus-1.jpg"/>
+<img alt="Sebli Special Combo Platter" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-9.jpg"/>
 </div>
-<div class="rounded-xl overflow-hidden group" data-category="events">
-<img alt="Cultural Events at Sebli" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="album-2.jpg"/>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Doro Wet - Ethiopian Chicken" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-10.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Shiro - Ethiopian Vegetarian Dish" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-4.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Veg Combo - Ethiopian Vegetarian Platter" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-5.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="catering">
+<img alt="Sebli Catering Services" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="catering.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Kitfo - Ethiopian Ground Beef" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-11.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Tibs Firfir - Ethiopian Food" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-12.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Ethiopian Coffee Ceremony" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-13.jpg"/>
+</div>
+<div class="rounded-xl overflow-hidden group" data-category="foods">
+<img alt="Ethiopian Beverage Selection" class="w-full h-56 md:h-64 object-cover transition-transform duration-500 group-hover:scale-105" src="menu-14.jpg"/>
 </div>
 </div>
 </div>
@@ -181,12 +220,16 @@
 
   // Gallery filter functionality
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
+  const galleryItems = document.querySelectorAll('#galleryGrid > div');
 
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // highlight active button
-      filterButtons.forEach(b => b.classList.remove("bg-primary", "text-white"));
+      filterButtons.forEach(b => {
+        b.classList.remove("bg-primary", "text-white");
+        b.classList.add("bg-stone-200", "dark:bg-stone-700");
+      });
+      button.classList.remove("bg-stone-200", "dark:bg-stone-700");
       button.classList.add("bg-primary", "text-white");
 
       const filter = button.dataset.filter;

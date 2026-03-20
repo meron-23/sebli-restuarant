@@ -50,9 +50,21 @@
 <nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
 <a class="hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="relative group">
+  <button class="hover:text-primary transition-colors flex items-center gap-1">
+    Services
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </button>
+  <div class="absolute top-full left-0 mt-2 w-48 bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="restaurant.html">Restaurant</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="hookah-lounge.html">Hookah Lounge</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="event-center.html">Event Center</a>
+    <a class="block px-4 py-3 text-sm hover:bg-stone-100 dark:hover:bg-stone-800 transition-colors" href="catering.html">Catering</a>
+  </div>
+</div>
 <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 <button class="md:hidden" onclick="toggleMobileMenu()">
@@ -66,9 +78,14 @@
 <nav class="container mx-auto px-4 py-4 space-y-2">
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="menu.html">Menu</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="event.html">Events</a>
+<div class="border-t border-stone-200 dark:border-stone-800 pt-2 mt-2">
+  <p class="text-xs text-stone-500 dark:text-stone-400 uppercase tracking-widest mb-2">Services</p>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="restaurant.html">Restaurant</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="hookah-lounge.html">Hookah Lounge</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="event-center.html">Event Center</a>
+  <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors pl-4" href="catering.html">Catering</a>
+</div>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
-<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
 </div>
