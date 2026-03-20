@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sebli Ethiopian Restaurant & Lounge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8C031C",           // deep red (primary brand)
+              secondary: "#022859",        // dark blue
+              accent: "#F28F6B",           // salmon/orange
+              brown: "#593202",            // brown
+              "background-light": "#f3f4f6", 
+              "background-dark": "#0D0D0D",  // near black
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', 'serif'],
+              body: ['"Lato"', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      .font-display {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white">
+<div class="relative min-h-screen bg-cover bg-center flex flex-col pt-20" style="background-image: url('album-1.jpg');">
+<div class="absolute inset-0 bg-black bg-opacity-60"></div>
+<header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background-light/80 dark:bg-background-dark/70 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-2xl font-bold tracking-wider">Sebli Ethiopian</h1>
+</div>
+<nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<button class="md:hidden">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</header>
+<main class="relative z-10 flex flex-col items-center justify-center text-center flex-grow">
+<div class="container mx-auto px-4">
+<p class="font-display italic text-4xl sm:text-5xl lg:text-6xl text-primary mb-2">Welcome</p>
+<h2 class="text-5xl sm:text-6xl lg:text-8xl font-bold tracking-widest my-2 uppercase">SEBLI ETHIOPIAN</h2>
+<div class="flex items-center justify-center space-x-4 my-4">
+<hr class="w-16 border-t-2 border-primary"/>
+<span class="text-sm uppercase tracking-widest">Authentic Ethiopian Cuisine</span>
+<hr class="w-16 border-t-2 border-primary"/>
+</div>
+</div>
+</main>
+</div>
+
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+<div class="max-w-3xl mx-auto">
+<div class="text-center">
+<p class="text-sm font-bold uppercase tracking-wider text-primary">About Us</p>
+<h3 class="mt-2 text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl">Welcome to Sebli Ethiopian</h3>
+<p class="mt-6 text-lg leading-8">
+                        Sebli Ethiopian Restaurant & Lounge offers a unique dining experience that brings the rich and diverse flavors of Ethiopian cuisine to Stone Mountain, Georgia. Our family-owned establishment is dedicated to preserving and sharing the heritage of Ethiopian cuisine, known for its high-quality ingredients, authentic spice blends, and welcoming atmosphere.
+                    </p>
+</div>
+<div class="mt-12 grid grid-cols-1 sm:grid-cols-2 gap-4">
+<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-sm font-bold shadow-sm hover:bg-primary/90 transition-colors" href="menu.html">
+                        View Our Menu
+                    </a>
+<a class="flex items-center justify-center rounded-lg h-12 px-6 bg-primary/10 text-primary hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30 text-sm font-bold transition-colors" href="event.html">
+                        See Upcoming Events
+                    </a>
+</div>
+</div>
+<section class="mt-20">
+<div class="text-center">
+<p class="text-sm font-bold uppercase tracking-wider text-primary">Stay Connected</p>
+<h3 class="mt-2 text-3xl font-bold tracking-tight text-stone-900 dark:text-white sm:text-4xl">#SebliEthiopian</h3>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-stone-600 dark:text-stone-400">Follow us on social media for the latest updates, events, and a peek behind the scenes.</p>
+</div>
+<div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+<div>
+<h4 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white flex items-center gap-3">
+<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+</svg>
+<span>Recent Posts</span>
+</h4>
+<div class="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-4">
+<div class="aspect-square rounded-lg overflow-hidden relative group">
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAapHGm8mSeOkTeNw9bvIjWx_NZXFvDNNrS3mT95DkwGQzFKEMRhGx4nN_vTc7tThDgAtheA9_0aGF6R7YjFISIjJxhn9-LwsodQxFdHAzNm6o5Q-0cIyQCUpvQmUxZUcuhSNkx8BJMq_oIViW-XcAjgDF0kpHfHR5QbDmopw4zwgqvt04p-r1f_lbgBDzCm5u0_F2xQf3IrnxfNx67wU0k-nY4SD8l2HFY9cvP_A_cpmWViCtIFA95OLm4c3G9BKHasqEvaEFmSVQ"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="text-white text-center p-2">
+<p class="text-sm font-bold">Cocktail Night!</p>
+<p class="text-xs mt-1">2.3k Likes</p>
+</div>
+</div>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden relative group">
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwHuN8ov7-XDrPyuvRQW6QW8eJud3Ujd8NYiLT4g_glR3RxyiqkO3zVGQPBME5skrJ2eh9kYD6kNDrjIdYSoy-2uHX5IZ5iYR__3thVibx-2K27QDypmN10zeK5GpjfXkoN_vNNvRZZIDDa647yA-t9oet73qLAfHDqV_qeK0FZPT61efYqCWfND5HlQV5G0y-N6wPZ35fUJGUDR_WhBQ7Qaetn3bkEf4kaKfDSa6_x5QFoA_12rDaYuLghcmyG5p7LoERMQd72ks"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="text-white text-center p-2">
+<p class="text-sm font-bold">Live Music Friday</p>
+<p class="text-xs mt-1">1.8k Likes</p>
+</div>
+</div>
+</div>
+<div class="aspect-square rounded-lg overflow-hidden relative group">
+<img alt="Instagram Post" class="h-full w-full object-cover group-hover:scale-105 transition-transform duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC17dx7A_jtUPtBgRoLJ125AAjdkV-pEhNkKarL9gYTEMIM8IVIAE2YV9BVTEMCvSVaPviNUbixg027diutfkSWMCRpCNcu7PTLHoj9e4OmmKHfsVWjjkECFm5tfq0voAe7VzEhG7N5WBMnX3Rlp095g-Qc5_Cw8vh5cWylboBLsmQwb3H39fT5We9AbFUGVn5ktqJlrbVloYA8Yg7Mz8OvpY_q7zFznZ1sj2mV1HTw7v_3guimoRUQN4AmTPjdwturCHhvRRB-91I"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<div class="text-white text-center p-2">
+<p class="text-sm font-bold">New Menu Items</p>
+<p class="text-xs mt-1">3.1k Likes</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-2xl font-bold tracking-tight text-stone-900 dark:text-white flex items-center gap-3">
+<svg class="h-8 w-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M22.675 0h-21.35C.589 0 0 .589 0 1.325v21.351C0 23.411.589 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.589 1.325-1.325V1.325C24 .589 23.411 0 22.675 0z"></path>
+</svg>
+<span>Community Buzz</span>
+</h4>
+<div class="mt-6 space-y-4">
+<div class="bg-white dark:bg-stone-800/50 p-4 rounded-lg shadow-sm flex items-start gap-4">
+<img alt="User Avatar" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG0GgI07sE1kiYVDuFCa4gszux3wlrEyzJVW7ohwJyaTxwl7ai4jWrN7VU9ZVQCIaV9tc2zO6bDUKT6z3S2fxb5wM_r_mT2_Ip5vUohUz6LWlEZf011TeRUwe5SNda4LFj_BTYVCR4v29w2ZGhN41FKBQwxQd8JbQYFOFHhADyJSbjillkUAllZHQObh7bX98KgXbXRiGshltEE31QE0MyX74sRr22caYtQGyfagOFcAPwFcZ8NAqozm4lp_eyiyctvX-gHR_JPbo"/>
+<div>
+<p class="font-semibold text-stone-800 dark:text-white">Tesfit Belay</p>
+<p class="text-stone-600 dark:text-stone-300 text-sm">"They all the best ever hareg,frey, helu,fani, hana and all of them are the best carefully and respectful"</p>
+<span class="text-xs text-stone-500 dark:text-stone-400 mt-1 block">Recent review</span>
+</div>
+</div>
+<div class="bg-white dark:bg-stone-800/50 p-4 rounded-lg shadow-sm flex items-start gap-4">
+<img alt="User Avatar" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBifcuf6y4sNc8pKTcg4fM4p9TEOoSKXd22QGbc-JCrg13Td9jjBxjm9kUgeucTtfcADDYZyYWzK8cz9w8tjGwFZmQmKGVK8_QnZY8Jk7OdBqwWRlbUG9LfOmpcFNiQ2fc85Uzy_fOY5E6Y5dLSNDpZzt1lBzqzC3RBYSjz5zoU__7rbpJi1v7m99A6O-nJQCRW51BJPbQt0LcURu_gJfQKnVmceppnhBjOBIwSjAegXL1bVrFkVZFYy_n7OBd99flDQVmUjr82OpQ"/>
+<div>
+<p class="font-semibold text-stone-800 dark:text-white">Camille McGhee</p>
+<p class="text-stone-600 dark:text-stone-300 text-sm">"The food is flavored perfectly. We've eaten here 3x and love it each time. We use to frequent Ledet, but we have preferred Sebi- more affordable and consistent flavor & quality. Try the ethiopian drinks"</p>
+<span class="text-xs text-stone-500 dark:text-stone-400 mt-1 block">Recent review</span>
+</div>
+</div>
+<div class="bg-white dark:bg-stone-800/50 p-4 rounded-lg shadow-sm flex items-start gap-4">
+<img alt="User Avatar" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNGUA0xGgRFTlK-2fnD6TVXvhSNN4eLfSnc-jw1nIavFzYypnk9Kizeon8nX5DDpDXUAo6hrQWL1lsyot3qBGyRGShAWLGPWqu1Q5U30tBzd2ootXfeLZTo2drUHiflhsQJ8HbJd_6YrAJwOCPVsyGME0udwu5VuB2Jjmwwi8JGyJ4ouULzIARcEFcQU6NiCLAj6WIxvC10BEkjBp60Vl7--KsL2UXWFuEuPvS3tTGZ04elnd-CZL6gUwv4ns5hQ8kX7OeecxU8YI"/>
+<div>
+<p class="font-semibold text-stone-800 dark:text-white">Christian Hiers</p>
+<p class="text-stone-600 dark:text-stone-300 text-sm">"Very unique restaurant. The food was really tasty. We'll be back when in this area again. They had late hours. Music was local and went with the cuisine."</p>
+<span class="text-xs text-stone-500 dark:text-stone-400 mt-1 block">Recent review</span>
+</div>
+</div>
+<div class="bg-white dark:bg-stone-800/50 p-4 rounded-lg shadow-sm flex items-start gap-4">
+<img alt="User Avatar" class="h-10 w-10 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgvYAJQD3aB2g3PDTOyQ1r68QIQUemPfWqrmUjeXmS1ncqW9hHB1A-aG6oGhQo8Jf2PTIrqT8wnKJcUJI2JR384F9cr129Xnvyi2xMXX6hlx12CncHcMDwdP9r9JmRKZvabWQgo-tbiDG_I7aSYj0K8XO6XbNKGWHu1Or-EKBpFztRpTUL5iHDa-EUBeb_V1PJPHDVgKNsSe7GlDxxAJv9fjsX9DAeJDn3gsZVGRjatTpSI7OBS2Ln5vaPrxRjEKulm2AOLE2k4ts"/>
+<div>
+<p class="font-semibold text-stone-800 dark:text-white">Big Baby</p>
+<p class="text-stone-600 dark:text-stone-300 text-sm">"My name is kalvin and the owner of this place is so awesome she gave me free food and drinks and I didn't even ask I had to force her to take my money because she kept refusing. Places like this dont exist anymore and it's sad. She makes you feel like family. The food is awesome I would do some research and check and see if it's for you. But honestly the service was quick and the hospitality was 100% the best on the Eastside. Younhave to come bring your family and enjoy yourself. And they have a section separately in the back with hookah and music!!!!!!"</p>
+<span class="text-xs text-stone-500 dark:text-stone-400 mt-1 block">Recent review</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <h3 class="text-lg font-bold text-stone-900 dark:text-white">Location</h3>
+                <p class="mt-2 text-base text-stone-400">Sebli Ethiopian Restaurant & Lounge<br>4995 Memorial Dr<br>Stone Mountain, GA 30083</p>
+            </div>
+            <div class="col-span-1">
+                <h3 class="text-lg font-bold text-stone-900 dark:text-white">Working Hours</h3>
+                <p class="mt-2 text-base text-stone-400">
+                    Open Daily: <span class="font-semibold">10:00 AM – 3:00 AM</span><br>
+                    Experience dining at its best, day or night.
+                </p>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-primary/20 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm text-stone-600 dark:text-stone-400 md:order-1">© 2024 Sebli Ethiopian Restaurant & Lounge. All Rights Reserved.</p>
+            <div class="flex items-center gap-4 mt-4 md:mt-0 md:order-2">
+                <p class="text-sm font-medium text-stone-600 dark:text-stone-400">Follow us</p>
+                <a href="https://www.facebook.com/sebliethiopianrestaurant/" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0h-21.35C.589 0 0 .589 0 1.325v21.351C0 23.411.589 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.589 1.325-1.325V1.325C24 .589 23.411 0 22.675 0z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0h-21.35C.589 0 0 .589 0 1.325v21.351C0 23.411.589 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.589 1.325-1.325V1.325C24 .589 23.411 0 22.675 0z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.038c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1.5-12.5h3v2.5h-3v-2.5zm-2.5 5h8v2.5h-8v-2.5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+
+
+<!-- Newsletter Modal -->
+<div id="newsletterModal" class="fixed inset-0 z-50 hidden bg-black/70 flex items-center justify-center">
+  <div class="bg-white dark:bg-stone-900 rounded-xl shadow-lg max-w-md w-full p-8 relative">
+    <!-- Close Button -->
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-stone-400 hover:text-primary">&times;</button>
+    
+    <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">Join Our Newsletter</h2>
+    <p class="text-stone-600 dark:text-stone-400 mb-6">Be the first to know about special events, new menu items, and exclusive offers. Sign up for our newsletter!</p>
+    
+    <form class="space-y-4" action="#" method="POST">
+      <div>
+        <label class="sr-only" for="email">Email</label>
+        <input id="email" name="email" type="email" required placeholder="Enter your email"
+          class="w-full px-4 py-3 bg-white dark:bg-stone-800 border border-stone-300 dark:border-stone-700 rounded-lg focus:ring-primary focus:border-primary">
+      </div>
+      <button type="submit"
+        class="w-full inline-flex items-center justify-center px-6 py-3.5 text-base font-bold text-white bg-primary rounded-lg hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary/50 dark:focus:ring-offset-background-dark transition-all">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById("newsletterModal");
+
+  // Show modal after 2 minutes (120000 ms)
+  setTimeout(() => {
+    modal.classList.remove("hidden");
+  }, 30000);
+
+  function closeModal() {
+    modal.classList.add("hidden");
+  }
+</script>
+
+</body></html>

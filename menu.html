@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Sebli Ethiopian Restaurant & Lounge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8C031C",
+              secondary: "#022859",
+              accent: "#F28F6B",
+              brown: "#593202",
+              "background-light": "#f3f4f6",
+              "background-dark": "#0D0D0D",
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', "serif"],
+              body: ['"Lato"', "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      .hero-bg {
+        background-image: url("https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+      }
+    </style>
+  </head>
+  <body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+<div class="min-h-screen pt-20">
+<header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background-light/80 dark:bg-background-dark/70 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-2xl font-bold tracking-wider">Sebli Ethiopian</h1>
+</div>
+<nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<button class="md:hidden">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</header>
+<main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-4xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-5xl">Our Menu</h2>
+<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Explore our authentic Ethiopian cuisine featuring traditional meat dishes, vegetarian specialties, and combo platters.</p>
+</div>
+<div class="space-y-16">
+  <!-- Meat Dishes -->
+  <div>
+    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Meat Dishes</h3>
+    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
+      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
+        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Beef & Lamb Specialties </a>
+      </nav>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1541518763669-27f904917539?q=80&w=2000&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">AWAZE TIBS</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Cubed prime beef sautéed in berbere spiced sauce with grilled onions, fresh tomatoes, and peppers.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">GORED GORED (BEEF)</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Cubes of soft beef seasoned with awaze spices, mitmita chili peppers, and spiced butter. Prepared rare or medium rare.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1541518763669-27f904917539?q=80&w=2000&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">ZILEZIL TIBS</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Strips of tender beef sautéed in spiced butter, grilled onions, peppers and fresh herbs. Hot from the kitchen, enjoy this exotic plate sizzling with sweet aromas!</p>
+          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SEBLI SPECIAL KITFO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Finely chopped prime lean beef seasoned with herbed butter sauce and spices served with kocho, gomen and Ethiopian cottage cheese. Prepared rare, medium, or well done.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$15.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1541518763669-27f904917539?q=80&w=2000&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">LEGA (BEEF) TIBS</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Tender choice of beef sautéed in spiced butter, grilled onions, green peppers, rosemary, and fresh herbs.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$12.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">YE BEG (LAMB) TIBS</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Succulent pieces of fresh lamb sautéed in butter seasoned with onions, green pepper, tomato. Served juicy or sizzling.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">DORO WET</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Chicken stewed in special berbere sauce and seasoned butter; served with hardboiled eggs and homemade Ethiopian cottage cheese.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$15.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">DEREK BEEF OR LAMB TIBS</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Mild and spicy beef stew, extra lean chopped lamb simmered in mild sauce with butter, onion, garlic, ginger and turmeric.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">REGULAR KITFO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Finely chopped prime lean beef seasoned with herbed butter sauce and spices served with Ethiopian cottage cheese. Prepared rare, medium, or well done.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1606471191009-63994c53433b?q=80&w=2027&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">TIBS FIRFIR</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Scrambled Injera moistened with a delicious berbere sauce, pieces of meat flavored with garlic, tomato, onions and Ethiopian herbs.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vegetarian & Vegan Dishes -->
+  <div>
+    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Vegetarian & Vegan Dishes</h3>
+    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
+      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
+        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Plant-Based Specialties </a>
+      </nav>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1512621776951-a57141f2eefd?q=80&w=2070&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SHIRO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Ethiopian signature pureed split peas milled together and slow cooked in various spices.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$11.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=2070&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">VEGEY COMBO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Red lentil, spicy yellow pea, collard green, cabbage, green beans.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Combo Platters -->
+  <div>
+    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Combo Platters</h3>
+    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
+      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
+        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Family Style </a>
+      </nav>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=2070&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SEBLI SPECIAL MEET COMBO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">HALF MEAT HALF VEGETABLE</p>
+          <p class="mt-4 text-base font-semibold text-primary">$29.99</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="h-48 bg-cover bg-center" style='background-image: url("https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=2070&auto=format&fit=crop");'></div>
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SPECIAL VEGEY COMBO</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">A combination of vegan of red-root green beans with carrot, butecha (peas), collard green, miser wet, spicy lentil, cabbage, suf-fitfit or timatim fitfit, shiro, and azifa.</p>
+          <p class="mt-4 text-base font-semibold text-primary">$27.99</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Beverages -->
+  <div>
+    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Beverages</h3>
+    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
+      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
+        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Drinks & Coffee </a>
+      </nav>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">WATER</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Bottled water</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SOFT DRINK</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Assorted soft drinks</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">PERRIR</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Refreshing beverage</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">COKE CAN</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Classic Coca-Cola</p>
+          <p class="mt-4 text-base font-semibold text-primary">$1</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Habesha Beer</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Authentic Ethiopian beer</p>
+          <p class="mt-4 text-base font-semibold text-primary">$4</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Stella</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Belgian pilsner</p>
+          <p class="mt-4 text-base font-semibold text-primary">$3</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Heineken</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Dutch pale lager</p>
+          <p class="mt-4 text-base font-semibold text-primary">$3</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Guinness</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Irish dry stout</p>
+          <p class="mt-4 text-base font-semibold text-primary">$3</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Modelo</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Mexican lager beer</p>
+          <p class="mt-4 text-base font-semibold text-primary">$3</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Budlight</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Classic American lager</p>
+          <p class="mt-4 text-base font-semibold text-primary">$3</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Ye-jebena Buna (traditional coffee)</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Traditional Ethiopian coffee ceremony</p>
+          <p class="mt-4 text-base font-semibold text-primary">$10</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Coffee</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Fresh brewed coffee</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Tea</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Hot tea selection</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Latte</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Espresso with steamed milk</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
+        <div class="p-6">
+          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Cappuccino</h4>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Espresso with frothed milk</p>
+          <p class="mt-4 text-base font-semibold text-primary">$2</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="md:col-span-1">
+            <h3 class="text-lg font-bold text-stone-900 dark:text-white mb-4">Location</h3>
+            <div class="text-base text-stone-400">
+              <p class="font-semibold">Sebli Ethiopian Restaurant & Lounge</p>
+              <p>4995 Memorial Dr</p>
+              <p>Stone Mountain, GA 30083</p>
+            </div>
+          </div>
+          <div class="md:col-span-1">
+            <h3 class="text-lg font-bold text-stone-900 dark:text-white mb-4">Working Hours</h3>
+            <div class="text-base text-stone-400">
+              <p>Open Daily: <span class="font-semibold">10:00 AM – 3:00 AM</span></p>
+              <p>Dine-in, Takeaway & Late Night lounge.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 border-t border-primary/20 pt-8 flex flex-col md:flex-row items-center justify-between">
+          <p class="text-sm text-stone-600 dark:text-stone-400 md:order-1"> 2024 Sebli Ethiopian Restaurant & Lounge. All Rights Reserved.</p>
+          <div class="flex items-center gap-4 mt-4 md:mt-0 md:order-2">
+            <p class="text-sm font-medium text-stone-600 dark:text-stone-400">Follow us</p>
+            <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-primary transition-colors">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.689-.073-4.948-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-primary transition-colors">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org.2000/svg">
+                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616v.064c0 2.298 1.634 4.212 3.791 4.649-.69.188-1.43.23-2.187.085.604 1.956 2.349 3.378 4.422 3.419-1.799 1.407-4.069 2.245-6.523 2.245-.425 0-.845-.025-1.258-.074 2.323 1.496 5.078 2.372 8.034 2.372 6.381 0 9.802-5.29 9.802-9.802 0-.149 0-.297-.007-.445.677-.488 1.265-1.099 1.743-1.816z"></path>
+              </svg>
+            </a>
+            <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-primary transition-colors">
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+</div>
+
+</body></html>

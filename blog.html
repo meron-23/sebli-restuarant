@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Blog - Sebli Ethiopian Restaurant & Lounge</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8C031C",
+              secondary: "#022859",
+              accent: "#F28F6B",
+              brown: "#593202",
+              "background-light": "#f3f4f6", 
+              "background-dark": "#0D0D0D", 
+            },
+            fontFamily: {
+              display: ['"Playfair Display"', 'serif'],
+              body: ['"Lato"', 'sans-serif'],
+            },
+            borderRadius: {
+              DEFAULT: "0.25rem",
+            },
+          },
+        },
+      };
+    </script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<style>
+      body {
+        font-family: 'Lato', sans-serif;
+      }
+      .font-display {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-800 dark:text-gray-200">
+<div class="flex min-h-screen flex-col pt-20">
+<header class="fixed inset-x-0 top-0 z-50 px-4 sm:px-6 lg:px-8 py-4 bg-background-light/80 dark:bg-background-dark/70 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+<div class="container mx-auto flex justify-between items-center">
+<div class="flex items-center">
+<h1 class="text-2xl font-bold tracking-wider">Sebli Ethiopian</h1>
+</div>
+<nav class="hidden md:flex items-center space-x-6 text-sm uppercase tracking-widest">
+<a class="hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="hover:text-primary transition-colors" href="event.html">Events</a>
+<a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+<button class="md:hidden">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</header>
+<main class="flex-grow">
+<div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+<div class="mb-12 text-center">
+<h1 class="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-5xl">
+              Ethiopian Culinary Stories
+            </h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600 dark:text-gray-400">
+              Discover the rich heritage of Ethiopian cuisine, traditional recipes, cultural insights, and the vibrant stories behind Sebli Ethiopian Restaurant.
+            </p>
+</div>
+<div class="grid gap-12 lg:grid-cols-2 lg:gap-16">
+<div class="flex flex-col overflow-hidden rounded-xl shadow-lg transition-all hover:shadow-2xl">
+<div class="h-64 bg-cover bg-center" style='background-image: url("album-4.jpg");'></div>
+<div class="flex flex-1 flex-col justify-between bg-background-light p-6 dark:bg-background-dark/50">
+<div class="flex-1">
+<p class="text-sm font-medium text-primary">Featured</p>
+<a class="mt-2 block" href="#">
+<p class="text-2xl font-bold text-gray-900 dark:text-white">The Art of Ethiopian Coffee Ceremony</p>
+<p class="mt-3 text-base text-gray-600 dark:text-gray-400">
+                      Discover the ancient tradition of Ethiopian coffee ceremony, from roasting fresh beans to the cultural significance of this beloved ritual that brings communities together.
+                    </p>
+</a>
+</div>
+<div class="mt-6 flex items-center justify-between">
+<a class="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:bg-primary/20" href="#">Read More</a>
+<div class="flex items-center gap-2">
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.48 14.22 20.48 8.29c0-.19 0-.37-.01-.56.84-.6 1.57-1.36 2.14-2.23z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-5 w-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.71-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.186.42 4.61 4.61 0 0 0-2.633 2.633 6.53 6.53 0 0 0-.419 2.216c-.043.962-.055 1.267-.055 3.71s0 2.755.055 3.71a6.53 6.53 0 0 0 .419 2.216 4.61 4.61 0 0 0 2.633 2.633 6.606 6.606 0 0 0 2.186.42c.962.043 1.267.055 3.71.055s2.755 0 3.71-.055a6.606 6.606 0 0 0 2.186-.42 4.61 4.61 0 0 0 2.633-2.633 6.53 6.53 0 0 0 .419-2.216c.043-.962.055-1.267.055-3.71s-.012-2.755-.055-3.71zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4.5-6.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="grid gap-8">
+<div class="group flex flex-col sm:flex-row items-start gap-6 overflow-hidden rounded-xl bg-background-light p-4 shadow-lg transition-all hover:shadow-2xl dark:bg-background-dark/50">
+<div class="h-32 w-full sm:w-48 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("album-3.jpg");'></div>
+<div class="flex flex-1 flex-col">
+<div>
+<a href="#">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Drink of the Month: Ethiopian Honey Wine (Tej)
+                    </h3>
+</a>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                    Discover the sweet traditions behind Ethiopia's famous honey wine, its brewing process, and cultural significance in Ethiopian celebrations.
+                  </p>
+</div>
+<div class="mt-4 flex w-full items-center justify-between">
+<a class="text-sm font-semibold text-primary opacity-0 transition-opacity group-hover:opacity-100" href="#">Read More →</a>
+<div class="flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.48 14.22 20.48 8.29c0-.19 0-.37-.01-.56.84-.6 1.57-1.36 2.14-2.23z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.71-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.186.42 4.61 4.61 0 0 0-2.633 2.633 6.53 6.53 0 0 0-.419 2.216c-.043.962-.055 1.267-.055 3.71s0 2.755.055 3.71a6.53 6.53 0 0 0 .419 2.216 4.61 4.61 0 0 0 2.633 2.633 6.606 6.606 0 0 0 2.186.42c.962.043 1.267.055 3.71.055s2.755 0 3.71-.055a6.606 6.606 0 0 0 2.186-.42 4.61 4.61 0 0 0 2.633-2.633 6.53 6.53 0 0 0 .419-2.216c.043-.962.055-1.267.055-3.71s-.012-2.755-.055-3.71zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4.5-6.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group flex flex-col sm:flex-row items-start gap-6 overflow-hidden rounded-xl bg-background-light p-4 shadow-lg transition-all hover:shadow-2xl dark:bg-background-dark/50">
+<div class="h-32 w-full sm:w-48 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("album-5.jpg");'></div>
+<div class="flex flex-1 flex-col">
+<div>
+<a href="#">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">Meet Our Ethiopian Chef: Traditional Culinary Master</h3>
+</a>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                    Learn about our head chef's journey from Ethiopia to Stone Mountain, bringing authentic recipes and cooking techniques passed down through generations.
+                  </p>
+</div>
+<div class="mt-4 flex w-full items-center justify-between">
+<a class="text-sm font-semibold text-primary opacity-0 transition-opacity group-hover:opacity-100" href="#">Read More →</a>
+<div class="flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.48 14.22 20.48 8.29c0-.19 0-.37-.01-.56.84-.6 1.57-1.36 2.14-2.23z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.71-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.186.42 4.61 4.61 0 0 0-2.633 2.633 6.53 6.53 0 0 0-.419 2.216c-.043.962-.055 1.267-.055 3.71s0 2.755.055 3.71a6.53 6.53 0 0 0 .419 2.216 4.61 4.61 0 0 0 2.633 2.633 6.606 6.606 0 0 0 2.186.42c.962.043 1.267.055 3.71.055s2.755 0 3.71-.055a6.606 6.606 0 0 0 2.186-.42 4.61 4.61 0 0 0 2.633-2.633 6.53 6.53 0 0 0 .419-2.216c.043-.962.055-1.267.055-3.71s-.012-2.755-.055-3.71zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4.5-6.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="group flex flex-col sm:flex-row items-start gap-6 overflow-hidden rounded-xl bg-background-light p-4 shadow-lg transition-all hover:shadow-2xl dark:bg-background-dark/50">
+<div class="h-32 w-full sm:w-48 flex-shrink-0 rounded-lg bg-cover bg-center" style='background-image: url("menus-1.jpg");'></div>
+<div class="flex flex-1 flex-col">
+<div>
+<a href="#">
+<h3 class="text-lg font-bold text-gray-900 dark:text-white">
+                      Ethiopian Spices: The Heart of Our Cuisine
+                    </h3>
+</a>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">
+                    Explore the essential spices that give Ethiopian food its distinctive flavor, from berbere to mitmita, and their role in traditional cooking.
+                  </p>
+</div>
+<div class="mt-4 flex w-full items-center justify-between">
+<a class="text-sm font-semibold text-primary opacity-0 transition-opacity group-hover:opacity-100" href="#">Read More →</a>
+<div class="flex items-center gap-1 opacity-0 transition-opacity group-hover:opacity-100">
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3V2z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M22.46 6c-.77.35-1.6.58-2.46.67.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98-3.56-.18-6.73-1.89-8.84-4.48-.37.63-.58 1.37-.58 2.15 0 1.49.76 2.81 1.91 3.58-.7-.02-1.37-.21-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.94.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.48 14.22 20.48 8.29c0-.19 0-.37-.01-.56.84-.6 1.57-1.36 2.14-2.23z"></path></svg>
+</button>
+<button class="rounded-full p-2 hover:bg-gray-200 dark:hover:bg-gray-700">
+<svg class="h-4 w-4 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.947 8.305a6.53 6.53 0 0 0-.419-2.216 4.61 4.61 0 0 0-2.633-2.633 6.606 6.606 0 0 0-2.186-.42c-.962-.043-1.267-.055-3.71-.055s-2.755 0-3.71.055a6.606 6.606 0 0 0-2.186.42 4.61 4.61 0 0 0-2.633 2.633 6.53 6.53 0 0 0-.419 2.216c-.043.962-.055 1.267-.055 3.71s0 2.755.055 3.71a6.53 6.53 0 0 0 .419 2.216 4.61 4.61 0 0 0 2.633 2.633 6.606 6.606 0 0 0 2.186.42c.962.043 1.267.055 3.71.055s2.755 0 3.71-.055a6.606 6.606 0 0 0 2.186-.42 4.61 4.61 0 0 0 2.633-2.633 6.53 6.53 0 0 0 .419-2.216c.043-.962.055-1.267.055-3.71s-.012-2.755-.055-3.71zM12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7zm4.5-6.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="bg-background-light dark:bg-background-dark border-t border-primary/20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="col-span-1">
+                <h3 class="text-lg font-bold text-stone-900 dark:text-white">Location</h3>
+                <p class="mt-2 text-base text-stone-400">Sebli Ethiopian Restaurant & Lounge<br>4995 Memorial Dr<br>Stone Mountain, GA 30083</p>
+            </div>
+            <div class="col-span-1">
+                <h3 class="text-lg font-bold text-stone-900 dark:text-white">Working Hours</h3>
+                <p class="mt-2 text-base text-stone-400">
+                    Open Daily: <span class="font-semibold">10:00 AM – 3:00 AM</span><br>
+                    Experience dining at its best, day or night.
+                </p>
+            </div>
+        </div>
+        <div class="mt-8 border-t border-primary/20 pt-8 flex flex-col md:flex-row items-center justify-between">
+            <p class="text-sm text-stone-600 dark:text-stone-400 md:order-1">© 2024 Sebli Ethiopian Restaurant & Lounge. All Rights Reserved.</p>
+            <div class="flex items-center gap-4 mt-4 md:mt-0 md:order-2">
+                <p class="text-sm font-medium text-stone-600 dark:text-stone-400">Follow us</p>
+                <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.675 0h-21.35C.589 0 0 .589 0 1.325v21.351C0 23.411.589 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.735 0 1.325-.589 1.325-1.325V1.325C24 .589 23.411 0 22.675 0z"></path>
+                    </svg>
+                </a>
+                <a href="#" class="text-stone-600 hover:text-primary dark:text-stone-400 dark:hover:text-white">
+                    <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.038c-5.523 0-10 4.477-10 10s4.477 10 10 10 10-4.477 10-10-4.477-10-10-10zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1.5-12.5h3v2.5h-3v-2.5zm-2.5 5h8v2.5h-8v-2.5z"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+</body></html>
