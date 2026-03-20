@@ -56,11 +56,23 @@
 <a class="hover:text-primary transition-colors" href="blog.html">Blog</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
 </nav>
-<button class="md:hidden">
+<button class="md:hidden" onclick="toggleMobileMenu()">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
 </button>
 </div>
 </header>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="fixed inset-x-0 top-20 z-40 hidden bg-background-light/95 dark:bg-background-dark/95 backdrop-blur border-b border-stone-200/50 dark:border-stone-800/50">
+<nav class="container mx-auto px-4 py-4 space-y-2">
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="menu.html">Menu</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="event.html">Events</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="blog.html">Blog</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
+</nav>
+</div>
 <main class="relative z-10 flex flex-col items-center justify-center text-center flex-grow">
 <div class="container mx-auto px-4">
 <p class="font-display italic text-4xl sm:text-5xl lg:text-6xl text-primary mb-2">Welcome</p>
@@ -250,7 +262,7 @@
 <script>
   const modal = document.getElementById("newsletterModal");
 
-  // Show modal after 2 minutes (120000 ms)
+  // Show modal after 30 seconds
   setTimeout(() => {
     modal.classList.remove("hidden");
   }, 30000);
@@ -258,6 +270,19 @@
   function closeModal() {
     modal.classList.add("hidden");
   }
+
+  // Mobile menu toggle
+  function toggleMobileMenu() {
+    const mobileMenu = document.getElementById("mobileMenu");
+    mobileMenu.classList.toggle("hidden");
+  }
+
+  // Close mobile menu when clicking on a link
+  document.querySelectorAll('#mobileMenu a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById("mobileMenu").classList.add("hidden");
+    });
+  });
 </script>
 
 </body></html>
