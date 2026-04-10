@@ -141,7 +141,7 @@
                     <div>
                         <div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-xl p-8 shadow-sm">
                             <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">Book Event Center</h2>
-                            <form action="#" method="POST" class="space-y-6">
+                            <form action="#" method="POST" class="space-y-6" onsubmit="event.preventDefault(); alert('Your event center has been successfully booked!'); this.reset();">
                                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                                     <div>
                                         <label for="first-name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">First Name</label>
