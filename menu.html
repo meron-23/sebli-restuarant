@@ -64,6 +64,7 @@
 </div>
 <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="hover:text-primary transition-colors" href="admin-login.html" data-admin-link="true">Admin</a>
 </nav>
 <button class="md:hidden" onclick="toggleMobileMenu()">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
@@ -85,283 +86,98 @@
 </div>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="admin-login.html" data-admin-link="true">Admin</a>
 </nav>
 </div>
 
 <main class="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-<div class="max-w-4xl mx-auto">
-<div class="text-center mb-12">
-<h2 class="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-5xl">Our Menu</h2>
-<p class="mt-4 text-lg text-gray-600 dark:text-gray-400">Explore our authentic Ethiopian cuisine featuring traditional meat dishes, vegetarian specialties, and combo platters.</p>
-</div>
-<div class="space-y-16">
-  <!-- Meat Dishes -->
-  <div>
-    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Meat Dishes</h3>
-    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
-      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
-        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Beef & Lamb Specialties </a>
-      </nav>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-2.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">AWAZE TIBS</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Cubed prime beef sautéed in berbere spiced sauce with grilled onions, fresh tomatoes, and peppers.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-3.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">GORED GORED (BEEF)</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Cubes of soft beef seasoned with awaze spices, mitmita chili peppers, and spiced butter. Prepared rare or medium rare.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-4.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">ZILEZIL TIBS</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Strips of tender beef sautéed in spiced butter, grilled onions, peppers and fresh herbs. Hot from the kitchen, enjoy this exotic plate sizzling with sweet aromas!</p>
-          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-5.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SEBLI SPECIAL KITFO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Finely chopped prime lean beef seasoned with herbed butter sauce and spices served with kocho, gomen and Ethiopian cottage cheese. Prepared rare, medium, or well done.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$15.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-6.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">LEGA (BEEF) TIBS</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Tender choice of beef sautéed in spiced butter, grilled onions, green peppers, rosemary, and fresh herbs.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$12.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-7.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">YE BEG (LAMB) TIBS</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Succulent pieces of fresh lamb sautéed in butter seasoned with onions, green pepper, tomato. Served juicy or sizzling.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-8.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">DORO WET</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Chicken stewed in special berbere sauce and seasoned butter; served with hardboiled eggs and homemade Ethiopian cottage cheese.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$15.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-9.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">DEREK BEEF OR LAMB TIBS</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Mild and spicy beef stew, extra lean chopped lamb simmered in mild sauce with butter, onion, garlic, ginger and turmeric.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-10.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">REGULAR KITFO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Finely chopped prime lean beef seasoned with herbed butter sauce and spices served with Ethiopian cottage cheese. Prepared rare, medium, or well done.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-11.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">TIBS FIRFIR</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Scrambled Injera moistened with a delicious berbere sauce, pieces of meat flavored with garlic, tomato, onions and Ethiopian herbs.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$14.99</p>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div class="max-w-6xl mx-auto space-y-16">
+    <section class="text-center">
+      <h2 class="text-4xl font-extrabold text-gray-900 dark:text-white tracking-tight sm:text-5xl">Our Authentic Menu</h2>
+      <p class="mt-4 text-lg text-gray-600 dark:text-gray-400">
+        Discover the rich flavors of Ethiopia with our carefully crafted traditional dishes, prepared with authentic spices and fresh ingredients.
+      </p>
+    </section>
 
-  <!-- Vegetarian & Vegan Dishes -->
-  <div>
-    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Vegetarian & Vegan Dishes</h3>
-    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
-      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
-        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Plant-Based Specialties </a>
-      </nav>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-15.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SHIRO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Ethiopian signature pureed split peas milled together and slow cooked in various spices.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$11.99</p>
+    <section>
+      <div class="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between mb-8">
+        <div>
+          <h3 class="text-3xl font-bold text-gray-900 dark:text-white">Featured Dishes</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Experience the authentic taste of Ethiopian cuisine.</p>
         </div>
       </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-9.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">VEGEY COMBO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Red lentil, spicy yellow pea, collard green, cabbage, green beans.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$13.99</p>
+      <div id="dynamicMenuGrid" class="space-y-12">
+        <div class="rounded-xl border border-stone-200 bg-white p-8 text-center text-stone-500 dark:border-stone-800 dark:bg-stone-900 dark:text-stone-400">
+          Loading menu items...
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Combo Platters -->
-  <div>
-    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Combo Platters</h3>
-    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
-      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
-        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Family Style </a>
-      </nav>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-13.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SEBLI SPECIAL MEET COMBO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">HALF MEAT HALF VEGETABLE</p>
-          <p class="mt-4 text-base font-semibold text-primary">$29.99</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="h-48 bg-cover bg-center" style='background-image: url("menu-14.jpg");'></div>
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SPECIAL VEGEY COMBO</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">A combination of vegan of red-root green beans with carrot, butecha (peas), collard green, miser wet, spicy lentil, cabbage, suf-fitfit or timatim fitfit, shiro, and azifa.</p>
-          <p class="mt-4 text-base font-semibold text-primary">$27.99</p>
-        </div>
-      </div>
-    </div>
-  </div>
+      <!-- Categories will be dynamically loaded here -->
+      <div id="menuCategories" class="space-y-12"></div>
+    </section>
 
-  <!-- Beverages -->
-  <div>
-    <h3 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">Beverages</h3>
-    <div class="border-b border-gray-200 dark:border-gray-700 mb-8">
-      <nav aria-label="Tabs" class="-mb-px flex space-x-8">
-        <a class="border-primary text-primary whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm" href="#"> Drinks & Coffee </a>
-      </nav>
-    </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">WATER</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Bottled water</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
+    <section class="grid gap-8 lg:grid-cols-2">
+      <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Place an Order</h3>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Create an order and receive a tracking ID instantly.</p>
+
+        <form id="orderForm" class="mt-6 space-y-4">
+          <div>
+            <label for="customerName" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Full Name</label>
+            <input id="customerName" name="customerName" type="text" required class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Phone Number</label>
+              <input id="phone" name="phone" type="tel" required class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+            </div>
+            <div>
+              <label for="orderEmail" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Email</label>
+              <input id="orderEmail" name="email" type="email" class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+            </div>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label for="orderItem" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Menu Item</label>
+              <select id="orderItem" name="itemId" required class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+                <option value="">Loading items...</option>
+              </select>
+            </div>
+            <div>
+              <label for="quantity" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Quantity</label>
+              <input id="quantity" name="quantity" type="number" min="1" value="1" required class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+            </div>
+          </div>
+          <div>
+            <label for="notes" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Order Notes</label>
+            <textarea id="notes" name="notes" rows="3" class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm"></textarea>
+          </div>
+          <button type="submit" class="w-full rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50">
+            Submit Order
+          </button>
+        </form>
+
+        <div id="orderResult" class="mt-6"></div>
       </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">SOFT DRINK</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Assorted soft drinks</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
+
+      <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+        <h3 class="text-2xl font-bold text-gray-900 dark:text-white">Track Your Order</h3>
+        <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Enter the tracking ID from your order confirmation to check if it is pending, on the way, or delivered.</p>
+
+        <form id="orderTrackingForm" class="mt-6 space-y-4">
+          <div>
+            <label for="trackingOrderId" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Tracking ID</label>
+            <input id="trackingOrderId" name="trackingOrderId" type="text" placeholder="ORD-..." required class="mt-1 block w-full rounded-lg border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 shadow-sm focus:border-primary focus:ring-primary sm:text-sm">
+          </div>
+          <button type="submit" class="w-full rounded-lg border border-primary px-5 py-3 text-sm font-bold text-primary hover:bg-primary/5 focus:outline-none focus:ring-2 focus:ring-primary/50">
+            Track Order
+          </button>
+        </form>
+
+        <div id="trackingResult" class="mt-6"></div>
       </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">PERRIR</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Refreshing beverage</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">COKE CAN</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Classic Coca-Cola</p>
-          <p class="mt-4 text-base font-semibold text-primary">$1</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Habesha Beer</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Authentic Ethiopian beer</p>
-          <p class="mt-4 text-base font-semibold text-primary">$4</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Stella</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Belgian pilsner</p>
-          <p class="mt-4 text-base font-semibold text-primary">$3</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Heineken</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Dutch pale lager</p>
-          <p class="mt-4 text-base font-semibold text-primary">$3</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Guinness</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Irish dry stout</p>
-          <p class="mt-4 text-base font-semibold text-primary">$3</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Modelo</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Mexican lager beer</p>
-          <p class="mt-4 text-base font-semibold text-primary">$3</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Budlight</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Classic American lager</p>
-          <p class="mt-4 text-base font-semibold text-primary">$3</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Ye-jebena Buna (traditional coffee)</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Traditional Ethiopian coffee ceremony</p>
-          <p class="mt-4 text-base font-semibold text-primary">$10</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Coffee</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Fresh brewed coffee</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Tea</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Hot tea selection</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Latte</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Espresso with steamed milk</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
-      </div>
-      <div class="bg-background-light dark:bg-background-dark/50 rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 border border-gray-200 dark:border-gray-800">
-        <div class="p-6">
-          <h4 class="text-lg font-bold text-gray-900 dark:text-white">Cappuccino</h4>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Espresso with frothed milk</p>
-          <p class="mt-4 text-base font-semibold text-primary">$2</p>
-        </div>
-      </div>
-    </div>
+    </section>
   </div>
-</div>
-</div>
-</div>
 </main>
 <footer class="bg-background-light dark:bg-background-dark border-t border-primary/20">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -407,16 +223,16 @@
     </footer>
 </div>
 
+<script src="sheets-config.js"></script>
+<script src="app.js"></script>
 <script>
-  // Mobile menu toggle
   function toggleMobileMenu() {
     const mobileMenu = document.getElementById("mobileMenu");
     mobileMenu.classList.toggle("hidden");
   }
 
-  // Close mobile menu when clicking on a link
-  document.querySelectorAll('#mobileMenu a').forEach(link => {
-    link.addEventListener('click', () => {
+  document.querySelectorAll("#mobileMenu a").forEach((link) => {
+    link.addEventListener("click", () => {
       document.getElementById("mobileMenu").classList.add("hidden");
     });
   });

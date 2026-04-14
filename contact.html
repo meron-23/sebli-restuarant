@@ -66,6 +66,7 @@
 </div>
 <a class="hover:text-primary transition-colors" href="gallery.html">Gallery</a>
 <a class="hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="hover:text-primary transition-colors" href="admin-login.html" data-admin-link="true">Admin</a>
 </nav>
 <button class="md:hidden" onclick="toggleMobileMenu()">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
@@ -87,6 +88,7 @@
 </div>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="gallery.html">Gallery</a>
 <a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="block py-2 text-sm uppercase tracking-widest hover:text-primary transition-colors" href="admin-login.html" data-admin-link="true">Admin</a>
 </nav>
 </div>
 <main class="flex-grow">
@@ -164,7 +166,7 @@
 <div class="space-y-10">
 <div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-xl p-8 shadow-sm">
 <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-6">Book a Table</h2>
-<form action="#" method="POST" onsubmit="event.preventDefault(); alert('Your table has been successfully booked!'); this.reset();">
+<form action="#" method="POST" data-booking-form="contact-table">
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
 <div>
 <label for="first-name" class="block text-sm font-medium text-stone-700 dark:text-stone-300">First Name</label>
@@ -201,7 +203,7 @@ Book Now
 <div class="bg-background-light dark:bg-background-dark border border-stone-200 dark:border-stone-800 rounded-xl p-8 shadow-sm">
 <h2 class="text-2xl font-bold text-stone-900 dark:text-white mb-4">Join Our Newsletter</h2>
 <p class="text-stone-600 dark:text-stone-400 mb-6">Be the first to know about special events, new menu items, and exclusive offers. Sign up for our newsletter!</p>
-<form class="space-y-4" action="#" method="POST" onsubmit="event.preventDefault(); alert('You have successfully joined the newsletter!'); this.reset();">
+<form class="space-y-4" action="#" method="POST" data-newsletter-form>
 <div>
 <label class="sr-only" for="email">Email</label>
 <input class="w-full px-4 py-3 bg-white dark:bg-stone-900 border-stone-300 dark:border-stone-700 rounded-lg focus:ring-primary focus:border-primary" id="email" name="email" placeholder="Enter your email" type="email" autocomplete="email" required>
@@ -261,6 +263,8 @@ Book Now
     </footer>
 </div>
 
+<script src="sheets-config.js"></script>
+<script src="app.js"></script>
 <script>
   // Mobile menu toggle
   function toggleMobileMenu() {

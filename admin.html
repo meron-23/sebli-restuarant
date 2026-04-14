@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Sebli Ethiopian Restaurant & Lounge</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#8C031C",
+              secondary: "#022859",
+              accent: "#F28F6B",
+              brown: "#593202",
+              "background-light": "#f3f4f6",
+              "background-dark": "#0D0D0D"
+            }
+          }
+        }
+      };
+    </script>
+  </head>
+  <body class="bg-background-light text-stone-900 dark:bg-background-dark dark:text-stone-100">
+    <header class="border-b border-stone-200/60 bg-white/80 backdrop-blur dark:border-stone-800/60 dark:bg-stone-950/60">
+      <div class="container mx-auto px-4 py-6 sm:px-6 lg:px-8">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h1 class="text-2xl font-extrabold tracking-tight">Admin Dashboard</h1>
+            <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">Frontend-only management powered by Google Sheets.</p>
+          </div>
+          <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-end">
+            <div id="authBadge" class="inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-4 py-2 text-sm font-semibold dark:border-stone-800 dark:bg-stone-900">
+              <span class="h-2 w-2 rounded-full bg-amber-500" aria-hidden="true"></span>
+              <span>Checking Google Sheets access...</span>
+            </div>
+            <a
+              class="rounded-lg border border-stone-200 bg-white px-5 py-2.5 text-sm font-bold hover:bg-stone-50 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900"
+              href="https://docs.google.com/spreadsheets/d/1OuVbUpXMj8C47ZcZNGQBChixuB0X0Ic7xS6CnPhp-2c/edit"
+              rel="noreferrer"
+              target="_blank"
+            >
+              Open Sheet
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto space-y-10 px-4 py-10 sm:px-6 lg:px-8">
+      <section class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+        <div class="flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
+          <div>
+            <h2 class="text-lg font-extrabold">Admin Session</h2>
+            <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">This dashboard reads and writes orders, bookings, newsletter entries, and menu items directly through Google Sheets.</p>
+          </div>
+          <button id="logoutButton" class="rounded-lg border border-stone-200 bg-white px-5 py-2.5 text-sm font-bold hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-stone-300/60 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900" type="button">
+            Log Out
+          </button>
+        </div>
+        <p id="tokenStatus" class="mt-4 text-sm text-stone-500 dark:text-stone-400">Admin access is unlocked in this browser session.</p>
+      </section>
+
+      <section class="grid gap-6 md:grid-cols-4">
+        <div class="rounded-xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-sm text-stone-500 dark:text-stone-400">Menu items</p>
+          <p id="itemsCount" class="mt-2 text-3xl font-extrabold">-</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-sm text-stone-500 dark:text-stone-400">Orders</p>
+          <p id="ordersCount" class="mt-2 text-3xl font-extrabold">-</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-sm text-stone-500 dark:text-stone-400">Bookings</p>
+          <p id="bookingsCount" class="mt-2 text-3xl font-extrabold">-</p>
+        </div>
+        <div class="rounded-xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <p class="text-sm text-stone-500 dark:text-stone-400">Newsletter</p>
+          <p id="newsletterCount" class="mt-2 text-3xl font-extrabold">-</p>
+        </div>
+      </section>
+
+      <section class="grid gap-6 lg:grid-cols-2">
+        <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <h2 class="text-lg font-extrabold">Order Status Summary</h2>
+          <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">Counts update directly from the `Orders` sheet.</p>
+          <div class="mt-6 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-xl bg-amber-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">Pending</p>
+              <p id="ordersPendingCount" class="mt-2 text-2xl font-extrabold text-amber-600">0</p>
+            </div>
+            <div class="rounded-xl bg-blue-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">On the way</p>
+              <p id="ordersOnTheWayCount" class="mt-2 text-2xl font-extrabold text-blue-600">0</p>
+            </div>
+            <div class="rounded-xl bg-emerald-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">Delivered</p>
+              <p id="ordersDeliveredCount" class="mt-2 text-2xl font-extrabold text-emerald-600">0</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-white p-6 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <h2 class="text-lg font-extrabold">Booking Status Summary</h2>
+          <p class="mt-1 text-sm text-stone-600 dark:text-stone-400">Counts update directly from the `Bookings` sheet.</p>
+          <div class="mt-6 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-xl bg-amber-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">Pending</p>
+              <p id="bookingsPendingCount" class="mt-2 text-2xl font-extrabold text-amber-600">0</p>
+            </div>
+            <div class="rounded-xl bg-emerald-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">Accepted</p>
+              <p id="bookingsAcceptedCount" class="mt-2 text-2xl font-extrabold text-emerald-600">0</p>
+            </div>
+            <div class="rounded-xl bg-red-500/10 p-4">
+              <p class="text-sm text-stone-500 dark:text-stone-400">Rejected</p>
+              <p id="bookingsRejectedCount" class="mt-2 text-2xl font-extrabold text-red-600">0</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid gap-8 lg:grid-cols-2">
+        <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <h2 id="itemFormTitle" class="text-xl font-extrabold">Add Menu Item</h2>
+          <p id="itemFormDescription" class="mt-2 text-sm text-stone-600 dark:text-stone-400">Items appear on the public menu once saved to Google Sheets.</p>
+
+          <form id="addItemForm" class="mt-6 space-y-4">
+            <input id="itemId" name="id" type="hidden" />
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemName">Item name</label>
+                <input id="itemName" name="name" type="text" required class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950" />
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemCategory">Category</label>
+                <input id="itemCategory" name="category" type="text" placeholder="Meat Dishes / Vegetarian / Drinks / Lounge" class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950" />
+              </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemImageFile">Image File</label>
+                <input id="itemImageFile" name="imageFile" type="file" accept="image/jpeg,image/jpg,image/png,image/webp" class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950 file:mr-4 file:rounded-full file:border-0 file:bg-primary file:px-4 file:py-2 file:text-sm file:font-semibold file:text-white hover:file:bg-primary/90" />
+                <p class="mt-2 text-xs text-stone-500 dark:text-stone-400">Files are compressed in the browser and stored as image data inside Google Sheets.</p>
+              </div>
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemImageUrl">Or Image URL</label>
+                <input id="itemImageUrl" name="imageUrl" type="text" placeholder="https://... (optional)" class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950" />
+                <p class="mt-2 text-xs text-stone-500 dark:text-stone-400">Use an external URL if you want higher resolution images.</p>
+              </div>
+            </div>
+            <div class="grid gap-4 sm:grid-cols-2">
+              <div>
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemPrice">Price</label>
+                <input id="itemPrice" name="price" type="number" step="0.01" min="0" required class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950" />
+              </div>
+              <div id="imagePreviewContainer" class="hidden">
+                <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300">Image Preview</label>
+                <img id="imagePreview" src="" alt="Preview" class="mt-1 h-20 w-20 rounded-lg border border-stone-300 object-cover" />
+              </div>
+            </div>
+            <div>
+              <label class="block text-sm font-semibold text-stone-700 dark:text-stone-300" for="itemDescription">Description</label>
+              <textarea id="itemDescription" name="description" rows="3" required class="mt-1 block w-full rounded-lg border-stone-300 bg-white dark:border-stone-700 dark:bg-stone-950"></textarea>
+            </div>
+            <div class="flex flex-col gap-3 sm:flex-row">
+              <button id="itemFormSubmitButton" class="w-full rounded-lg bg-primary px-5 py-3 text-sm font-bold text-white hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary/50" type="submit">
+                Add Item
+              </button>
+              <button id="cancelItemEditButton" class="hidden w-full rounded-lg border border-stone-200 bg-white px-5 py-3 text-sm font-bold hover:bg-stone-50 focus:outline-none focus:ring-2 focus:ring-stone-300/60 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900" type="button">
+                Cancel Edit
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-extrabold">Menu Items Management</h2>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Edit or remove menu and lounge items directly from Google Sheets.</p>
+            </div>
+            <button id="refreshItems" type="button" class="rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-stone-50 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900">
+              Refresh
+            </button>
+          </div>
+
+          <div class="mt-6 overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead class="text-left text-stone-500 dark:text-stone-400">
+                <tr>
+                  <th class="py-2 pr-4">Image</th>
+                  <th class="py-2 pr-4">Name</th>
+                  <th class="py-2 pr-4">Category</th>
+                  <th class="py-2 pr-4">Price</th>
+                  <th class="py-2 pr-4">Description</th>
+                  <th class="py-2 pr-4">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="itemsTable" class="divide-y divide-stone-200 dark:divide-stone-800">
+                <tr><td class="py-4 text-stone-500 dark:text-stone-400" colspan="6">Loading menu items...</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+          <div class="flex items-center justify-between gap-4">
+            <div>
+              <h2 class="text-xl font-extrabold">Latest Orders</h2>
+              <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Update delivery status: pending, on the way, delivered.</p>
+            </div>
+            <button id="refreshOrders" type="button" class="rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-stone-50 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900">
+              Refresh
+            </button>
+          </div>
+
+          <div class="mt-6 overflow-x-auto">
+            <table class="min-w-full text-sm">
+              <thead class="text-left text-stone-500 dark:text-stone-400">
+                <tr>
+                  <th class="py-2 pr-4">Order</th>
+                  <th class="py-2 pr-4">Customer</th>
+                  <th class="py-2 pr-4">Item</th>
+                  <th class="py-2 pr-4">Total</th>
+                  <th class="py-2 pr-4">Status</th>
+                  <th class="py-2 pr-4"></th>
+                </tr>
+              </thead>
+              <tbody id="ordersTable" class="divide-y divide-stone-200 dark:divide-stone-800"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="rounded-2xl border border-stone-200 bg-white p-8 shadow-sm dark:border-stone-800 dark:bg-stone-900">
+        <div class="flex items-center justify-between gap-4">
+          <div>
+            <h2 class="text-xl font-extrabold">Booking Requests</h2>
+            <p class="mt-2 text-sm text-stone-600 dark:text-stone-400">Accept or reject bookings and keep their status synced to Google Sheets.</p>
+          </div>
+          <button id="refreshBookings" type="button" class="rounded-lg border border-stone-200 bg-white px-4 py-2 text-sm font-semibold hover:bg-stone-50 dark:border-stone-800 dark:bg-stone-950 dark:hover:bg-stone-900">
+            Refresh
+          </button>
+        </div>
+
+        <div class="mt-6 overflow-x-auto">
+          <table class="min-w-full text-sm">
+            <thead class="text-left text-stone-500 dark:text-stone-400">
+              <tr>
+                <th class="py-2 pr-4">Booking</th>
+                <th class="py-2 pr-4">Service</th>
+                <th class="py-2 pr-4">Name</th>
+                <th class="py-2 pr-4">Phone</th>
+                <th class="py-2 pr-4">Date</th>
+                <th class="py-2 pr-4">Status</th>
+                <th class="py-2 pr-4"></th>
+              </tr>
+            </thead>
+            <tbody id="bookingsTable" class="divide-y divide-stone-200 dark:divide-stone-800"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script src="sheets-config.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
